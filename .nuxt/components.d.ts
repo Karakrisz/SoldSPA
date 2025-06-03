@@ -2,8 +2,13 @@
 import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
-      'AppFooter': typeof import("../components/AppFooter.vue")['default']
+      'AboutSection': typeof import("../components/AboutSection.vue")['default']
+    'AppFooter': typeof import("../components/AppFooter.vue")['default']
     'AppHeader': typeof import("../components/AppHeader.vue")['default']
+    'BlogSection': typeof import("../components/BlogSection.vue")['default']
+    'ContactSection': typeof import("../components/ContactSection.vue")['default']
+    'ServicesSection': typeof import("../components/ServicesSection.vue")['default']
+    'WorksSection': typeof import("../components/WorksSection.vue")['default']
     'Test': typeof import("../components/test.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -29,8 +34,13 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazyAppFooter': typeof import("../components/AppFooter.vue")['default']
+      'LazyAboutSection': typeof import("../components/AboutSection.vue")['default']
+    'LazyAppFooter': typeof import("../components/AppFooter.vue")['default']
     'LazyAppHeader': typeof import("../components/AppHeader.vue")['default']
+    'LazyBlogSection': typeof import("../components/BlogSection.vue")['default']
+    'LazyContactSection': typeof import("../components/ContactSection.vue")['default']
+    'LazyServicesSection': typeof import("../components/ServicesSection.vue")['default']
+    'LazyWorksSection': typeof import("../components/WorksSection.vue")['default']
     'LazyTest': typeof import("../components/test.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -62,8 +72,13 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
+export const AboutSection: typeof import("../components/AboutSection.vue")['default']
 export const AppFooter: typeof import("../components/AppFooter.vue")['default']
 export const AppHeader: typeof import("../components/AppHeader.vue")['default']
+export const BlogSection: typeof import("../components/BlogSection.vue")['default']
+export const ContactSection: typeof import("../components/ContactSection.vue")['default']
+export const ServicesSection: typeof import("../components/ServicesSection.vue")['default']
+export const WorksSection: typeof import("../components/WorksSection.vue")['default']
 export const Test: typeof import("../components/test.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -89,8 +104,13 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
+export const LazyAboutSection: typeof import("../components/AboutSection.vue")['default']
 export const LazyAppFooter: typeof import("../components/AppFooter.vue")['default']
 export const LazyAppHeader: typeof import("../components/AppHeader.vue")['default']
+export const LazyBlogSection: typeof import("../components/BlogSection.vue")['default']
+export const LazyContactSection: typeof import("../components/ContactSection.vue")['default']
+export const LazyServicesSection: typeof import("../components/ServicesSection.vue")['default']
+export const LazyWorksSection: typeof import("../components/WorksSection.vue")['default']
 export const LazyTest: typeof import("../components/test.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']

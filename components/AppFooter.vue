@@ -1,5 +1,5 @@
-<script setup></script>
-
 <template>
-  <footer>lábléc</footer>
+  <footer>
+    <ContactSection />
+  </footer>
 </template>

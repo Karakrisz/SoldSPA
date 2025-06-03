@@ -1,3 +1,5 @@
+
+@use 'sass:color';
 // Variables
 $primary-color: #fff;
 $secondary-color: #155b9b;
@@ -95,7 +97,7 @@ a {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
