@@ -59,13 +59,13 @@
 @use 'sass:color';
 .about-us {
   background-color: #ffffff;
-  padding: 2rem 1rem;
+  padding: 5em 0;
 
   &__inner {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -131,8 +131,6 @@
     display: block;
     width: 100%;
     height: auto;
-    border: 4px solid #ff4d4d;
-    border-radius: 4px;
   }
 
   @media (max-width: 768px) {

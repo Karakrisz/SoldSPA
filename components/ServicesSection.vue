@@ -42,7 +42,11 @@ const activeTab = ref('bontas')
           class="services__content services__content--bontas"
         >
           <div class="services__content-image">
-            <NuxtImg src="/img/test.png" alt="Bontási munkálatok példája" />
+            <NuxtImg
+              class="services__content-image__img"
+              src="/img/bontas.webp"
+              alt="Bontási munkálatok példája"
+            />
           </div>
           <div class="services__content-details">
             <h3 class="services__content-title">Bontás</h3>
@@ -101,23 +105,57 @@ const activeTab = ref('bontas')
           class="services__content services__content--komuves"
         >
           <div class="services__content-image">
-            <NuxtImg src="/img/test.png" alt="Kőműves munkák példája" />
+            <NuxtImg
+              class="services__content-image__img"
+              src="/img/komuves.webp"
+              alt="Kőműves munkák példája"
+            />
           </div>
           <div class="services__content-details">
             <h3 class="services__content-title">Kőműves munkák</h3>
             <p class="services__content-text">
-              <!-- Ide jöhet a „Kőműves munkák” szövege -->
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-              facilisi.
+              A kőműves munkák az építkezés alapját képezik – ezek a precíz,
+              szakszerű tevékenységek határozzák meg az épület tartósságát és
+              esztétikai értékét. Minden falazási, vakolási és burkolási munka
+              során törekszünk a legmagasabb minőségre, legyen szó új építésről
+              vagy felújításról.
+            </p>
+            <p class="services__content-text">
+              Csapatunk minden kőműves munkát alaposan megtervez, figyelembe
+              véve az építészeti igényeket és a helyi adottságokat. Fontos
+              számunkra a precizitás, a tiszta munkavégzés, és hogy minden
+              munkafázis után kifogástalan eredményt érjünk el.
             </p>
             <ul class="services__content-list">
               <li class="services__content-item">
-                <strong>Példa tétel 1</strong><br />
-                Leírás a kőműves munkákhoz.
+                <strong>Falazási munkák</strong><br />
+                Tégla, ytong és egyéb építőelemek szakszerű falazása, teherhordó
+                és válaszfalak építése precíz kivitelezéssel.
               </li>
               <li class="services__content-item">
-                <strong>Példa tétel 2</strong><br />
-                Egyéb információ a kőműves munkákról.
+                <strong>Vakolási munkák</strong><br />
+                Belső és külső vakolatok készítése, simítása, dekoratív
+                vakolatok és különleges felületkezelések alkalmazása.
+              </li>
+              <li class="services__content-item">
+                <strong>Csempézés és burkolás</strong><br />
+                Fürdőszobák, konyhák és egyéb helyiségek csempézése,
+                padlóburkolatok lerakása szakszerű ragasztással és fugázással.
+              </li>
+              <li class="services__content-item">
+                <strong>Járda és térburkolás</strong><br />
+                Kültéri járdák, teraszok és udvarok burkolása térkővel,
+                természetes kővel vagy betonlapokkal.
+              </li>
+              <li class="services__content-item">
+                <strong>Kémények és kandallók építése</strong><br />
+                Kémények falazása, kandallók építése és felújítása, tűzálló
+                anyagok szakszerű alkalmazásával.
+              </li>
+              <li class="services__content-item">
+                <strong>Javítási és karbantartási munkák</strong><br />
+                Meglévő falazatok javítása, vakolatok felújítása, repedések
+                megszüntetése és egyéb karbantartási feladatok.
               </li>
             </ul>
           </div>
@@ -129,22 +167,57 @@ const activeTab = ref('bontas')
           class="services__content services__content--szarazEpites"
         >
           <div class="services__content-image">
-            <NuxtImg src="/img/test.png" alt="Száraz építés munkálatok" />
+            <NuxtImg
+              class="services__content-image__img"
+              src="/img/komuves2.webp"
+              alt="Száraz építés munkálatok"
+            />
           </div>
           <div class="services__content-details">
             <h3 class="services__content-title">Száraz építés</h3>
             <p class="services__content-text">
-              <!-- Ide jöhet a „Száraz építés” szövege -->
-              Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.
+              A száraz építés a modern építőipar egyik leghatékonyabb módszere –
+              ez a technológia gyors, tiszta és környezetbarát megoldásokat
+              kínál minden építkezési igényre. A száraz építési technikák
+              alkalmazásával minimalizáljuk a szárítási időt és a nedvességgel
+              járó problémákat, így rövidebb határidővel dolgozhatunk.
+            </p>
+            <p class="services__content-text">
+              Csapatunk a száraz építés minden területén jártas, a legmodernebb
+              anyagokat és technológiákat alkalmazva. Fontos számunkra a
+              pontosság, a pormentes munkavégzés, és hogy minden projekt
+              gazdaságos és tartós megoldást jelentsen ügyfeleink számára.
             </p>
             <ul class="services__content-list">
               <li class="services__content-item">
-                <strong>Példa tétel A</strong><br />
-                Részletek a száraz építésről.
+                <strong>Gipszkarton rendszerek</strong><br />
+                Falak, álmennyezetek és térelválasztók építése gipszkarton
+                lemezekkel, fém vázszerkezettel.
               </li>
               <li class="services__content-item">
-                <strong>Példa tétel B</strong><br />
-                További információ a száraz építésről.
+                <strong>Gipszrost építés</strong><br />
+                Speciális gipszrost lemezek felhasználásával készült
+                konstrukciók, nagyobb terhelhetőséggel és stabilitással.
+              </li>
+              <li class="services__content-item">
+                <strong>OSB és furnér alapú építés</strong><br />
+                OSB lapok és furnér lemezek alkalmazása falakhoz, padlókhoz és
+                tetőszerkezetekhez tartós megoldásokkal.
+              </li>
+              <li class="services__content-item">
+                <strong>Szendvicspanel rendszerek</strong><br />
+                Szigetelt szendvicspanelek beépítése gyors falépítéshez, kiváló
+                hő- és hangszigetelő tulajdonságokkal.
+              </li>
+              <li class="services__content-item">
+                <strong>Moduláris építés</strong><br />
+                Előre gyártott elemek összeszerelése helyszínen, gyors és precíz
+                építkezési megoldásokkal.
+              </li>
+              <li class="services__content-item">
+                <strong>Laminált padlók és falburkolatok</strong><br />
+                Száraz technológiával történő padló- és falburkolás, ragasztó
+                nélküli click rendszerekkel és speciális rögzítésekkel.
               </li>
             </ul>
           </div>
@@ -159,8 +232,8 @@ const activeTab = ref('bontas')
 <style lang="scss" scoped>
 @use 'sass:color';
 .services {
-  background-color: #f5f5f5;
-  padding: 2rem 1rem;
+  background-color: #f0f0f0;
+  padding: 5em 0;
 
   &__inner {
     max-width: 1200px;
@@ -199,24 +272,27 @@ const activeTab = ref('bontas')
   }
 
   &__tab {
-    background-color: #ffe5b5; // világos sárga
-    color: #000000;
+    background-color: #ffe3ba; // világos sárga
+    color: #fff;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 999px;
-    font-weight: 600;
-    font-size: 0.9375rem;
+    font-weight: 700;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    text-transform: uppercase;
 
     &:hover,
     &:focus {
-      background-color: color.adjust(#ffe5b5, $lightness: -8%);
+      background: #f4a32a;
     }
 
     &--active {
-      background-color: #f5a623; // élénk sárga/orange, kiemelt
+      border-radius: 34px;
+      background: #f4a32a;
       color: #ffffff;
+      padding: 10px 24px;
     }
   }
 
@@ -245,9 +321,10 @@ const activeTab = ref('bontas')
     & > div {
       /* A <NuxtImg> belső struktúrája miatt célszerű így célozni */
       width: 100%;
-      height: auto;
+      height: 40.5em;
       border-radius: 4px;
       overflow: hidden;
+      object-fit: cover;
     }
   }
 
