@@ -46,7 +46,7 @@ watch(isMenuOpen, (newVal) => {
       <div class="logo-box header-content__logo-box">
         <NuxtLink to="/" class="header-content__logo-box__link">
           <NuxtImg
-            src="/img/test.png"
+            src="/img/header/logo.webp"
             alt="Panka Plast Kft."
             class="header-content__logo-box__link__img"
             height="100%"
@@ -118,10 +118,10 @@ watch(isMenuOpen, (newVal) => {
   background-color: #5a0001;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hamburger,
   .menu {
-    background-color: #5a0001;
+    background-color: #f5a623;
   }
 
   .menu {

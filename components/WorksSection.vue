@@ -4,7 +4,7 @@
       <!-- 1. blokk: bal oldalon kép, jobb oldalon narancs text‐box -->
       <div class="works__item works__item--image">
         <NuxtImg
-          src="/img/test.png"
+          src="/img/works.webp"
           alt="Építési helyszín belső részlet"
           class="works__item-image"
         />
@@ -44,7 +44,7 @@
       </div>
       <div class="works__item works__item--image">
         <NuxtImg
-          src="/img/test.png"
+          src="/img/works2.webp"
           alt="Építési helyszín külső részlet"
           class="works__item-image"
         />
@@ -57,10 +57,10 @@
 @use 'sass:color';
 .works {
   background-color: #ffffff;
-  padding: 2rem 1rem;
+  padding: 5em 0;
 
   &__inner {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -81,7 +81,6 @@
         display: block;
         width: 100%;
         height: auto;
-        border-radius: 4px;
         object-fit: cover;
       }
     }
@@ -91,7 +90,6 @@
       align-items: center;
       justify-content: center;
       padding: 1.5rem;
-      border-radius: 4px;
 
       &--orange {
         background-color: #f5a623;
@@ -121,6 +119,9 @@
         max-width: 500px;
         font-size: 1rem;
         line-height: 1.6;
+        @media (max-width: 768px) {
+          padding: 1em;
+        }
       }
     }
   }

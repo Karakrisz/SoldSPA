@@ -233,7 +233,7 @@ const activeTab = ref('bontas')
 @use 'sass:color';
 .services {
   background-color: #f0f0f0;
-  padding: 5em 0;
+  padding: 5em 2em;
 
   &__inner {
     max-width: 1200px;
@@ -257,7 +257,7 @@ const activeTab = ref('bontas')
     font-size: 2rem;
     font-weight: 700;
     color: #000000;
-    margin: 0;
+    margin: 0 0 1em 0;
   }
 
   &__tabs {
@@ -322,9 +322,11 @@ const activeTab = ref('bontas')
       /* A <NuxtImg> belső struktúrája miatt célszerű így célozni */
       width: 100%;
       height: 40.5em;
-      border-radius: 4px;
       overflow: hidden;
       object-fit: cover;
+      @media (max-width: 768px) {
+        height: 100%;
+      }
     }
   }
 
@@ -334,7 +336,7 @@ const activeTab = ref('bontas')
 
   &__content-title {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1rem;
     color: #000000;
   }
@@ -361,6 +363,9 @@ const activeTab = ref('bontas')
         font-weight: 600;
       }
     }
+  }
+  @media (max-width: 768px) {
+    padding: 3em 2em;
   }
 }
 </style>

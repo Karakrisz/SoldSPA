@@ -59,7 +59,7 @@
 @use 'sass:color';
 .about-us {
   background-color: #ffffff;
-  padding: 5em 0;
+  padding: 5em 2em;
 
   &__inner {
     max-width: 1200px;
@@ -103,11 +103,11 @@
     background-color: #f5a623;
     color: #ffffff;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.9375rem;
+    font-weight: 700;
+    font-size: 1rem;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 999px;
+    padding: 10px 24px;
+    border-radius: 34px;
     transition: background-color 0.2s ease;
 
     &:hover,
@@ -134,6 +134,7 @@
   }
 
   @media (max-width: 768px) {
+    padding: 3em 2em;
     &__inner {
       flex-direction: column;
       align-items: center;
@@ -142,6 +143,7 @@
     &__image-wrapper {
       width: 100%;
       max-width: 100%;
+      flex: unset;
     }
   }
 }

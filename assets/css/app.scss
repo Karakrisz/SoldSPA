@@ -194,19 +194,32 @@ ul {
 
 // Header Styles
 .header-content {
-  padding: 1em 5em;
+  .header-content__phone-box {
+    border-radius: 34px;
+    background: #f4a32a;
+    padding: 10px 24px;
+    margin-left: 1em;
+  }
+  .header-content__phone-box__link {
+    color: #fff;
+    font-weight: 700;
+  }
+  padding: 1em;
+  max-width: 1200px;
+  margin: auto;
   @include flex-center;
 
   &__logo-box {
     width: 20%;
     &__link__img {
-      width: 70%;
+      width: 40%;
     }
   }
 
   &__nav-box {
     width: 80%;
     @include flex-center;
+    justify-content: flex-end;
   }
 }
 
@@ -220,15 +233,6 @@ ul {
 
   &__item {
     padding-left: 2.5em;
-  }
-
-  &__list__li {
-    &:first-child {
-      border-left: 0.12rem solid $black;
-    }
-    &__img {
-      width: 45%;
-    }
   }
 }
 
@@ -267,6 +271,14 @@ ul {
   }
 }
 
+.video-content {
+  width: 100%;
+}
+
+.video-content__video {
+  width: 100%;
+}
+
 // Media Queries
 @mixin responsive($breakpoint) {
   @if $breakpoint == tablet {
@@ -292,9 +304,21 @@ $hamburger-bar-color: #1c362b;
 
 @include responsive(mobile) {
   .header-content {
-    padding: 2em;
-    flex-direction: row-reverse;
+    padding: 1em;
+    flex-direction: row;
     align-items: center;
+  }
+
+  .header-content__nav-box {
+    justify-content: end;
+  }
+
+  .header-content__logo-box__link__img {
+    width: 5em;
+  }
+
+  .header-content__phone-box {
+    display: none;
   }
 
   .header-logo-user-box {

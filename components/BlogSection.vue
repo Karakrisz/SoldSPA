@@ -90,7 +90,8 @@
 @use 'sass:color';
 .blog {
   background-color: #f5f5f5;
-  padding: 2rem 1rem;
+  padding: 18em 2em 28em 2em;
+  margin-top: -17em;
 
   &__inner {
     max-width: 1200px;
@@ -101,7 +102,7 @@
     font-size: 2rem;
     font-weight: 700;
     color: #000000;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5em;
   }
 
   &__cards {
@@ -122,11 +123,11 @@
 
   &__card {
     background-color: #ffffff;
-    border-radius: 4px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0px 4px 6px -2px rgba(0, 0, 0, 0.05);
 
     &-image {
       width: 100%;
@@ -170,11 +171,11 @@
       background-color: #f5a623;
       color: #ffffff;
       text-transform: uppercase;
-      font-weight: 600;
-      font-size: 0.9375rem;
+      font-weight: 700;
+      font-size: 1rem;
       text-decoration: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 999px;
+      padding: 10px 24px;
+      border-radius: 34px;
       align-self: flex-start;
       transition: background-color 0.2s ease;
 
@@ -183,6 +184,9 @@
         background-color: color.adjust(#f5a623, $lightness: -10%);
       }
     }
+  }
+  @media (max-width: 768px) {
+    padding: 15em 2em 25em 2em;
   }
 }
 </style>
